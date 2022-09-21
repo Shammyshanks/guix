@@ -6,6 +6,7 @@
    "feh"
    "herbstluftwm"
    "sxhkd"
+   "ungoogled-chromium
  
    "emacs-all-the-icons"
    "font-awesome" 
