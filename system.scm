@@ -2,11 +2,13 @@
 ;; by the graphical installer.
 ;; sudo guix systme reconfigure ~/.config/guix/system.scm
 
-(use-modules (gnu))
+(use-modules (gnu)(nongnu package linux))
 (use-service-modules desktop networking ssh xorg)
 (use-package-modules wm xorg )
 
 (operating-system
+ (kernel linux)
+ (firmware (list linux-firmware))
   (locale "en_US.utf8")
   (timezone "America/Los_Angeles")
   (keyboard-layout (keyboard-layout "us"))
