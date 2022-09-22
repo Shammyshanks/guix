@@ -2,7 +2,7 @@
 ;; by the graphical installer.
 ;; sudo guix systme reconfigure ~/.config/guix/system.scm
 
-(use-modules (gnu)(nongnu package linux))
+(use-modules (gnu)(nongnu packages linux))
 (use-service-modules desktop networking ssh xorg)
 (use-package-modules wm xorg )
 
